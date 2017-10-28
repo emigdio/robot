@@ -15,6 +15,8 @@
 		7019E9381FA27DDC001B361F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7019E9361FA27DDC001B361F /* LaunchScreen.storyboard */; };
 		7019E9431FA27DDD001B361F /* RobotEmigdioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7019E9421FA27DDD001B361F /* RobotEmigdioTests.swift */; };
 		7019E94E1FA27DDD001B361F /* RobotEmigdioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7019E94D1FA27DDD001B361F /* RobotEmigdioUITests.swift */; };
+		7019E95C1FA2AD66001B361F /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7019E95B1FA2AD66001B361F /* SplashViewController.swift */; };
+		7019E95E1FA2C38A001B361F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7019E95D1FA2C38A001B361F /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		7019E9491FA27DDD001B361F /* RobotEmigdioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobotEmigdioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7019E94D1FA27DDD001B361F /* RobotEmigdioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotEmigdioUITests.swift; sourceTree = "<group>"; };
 		7019E94F1FA27DDD001B361F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7019E95B1FA2AD66001B361F /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		7019E95D1FA2C38A001B361F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		7019E9291FA27DDC001B361F /* RobotEmigdio */ = {
 			isa = PBXGroup;
 			children = (
+				7019E95D1FA2C38A001B361F /* HomeViewController.swift */,
 				7019E92A1FA27DDC001B361F /* AppDelegate.swift */,
 				7019E92C1FA27DDC001B361F /* ViewController.swift */,
 				7019E92E1FA27DDC001B361F /* Main.storyboard */,
@@ -106,6 +111,7 @@
 				7019E9361FA27DDC001B361F /* LaunchScreen.storyboard */,
 				7019E9391FA27DDC001B361F /* Info.plist */,
 				7019E9311FA27DDC001B361F /* RobotEmigdio.xcdatamodeld */,
+				7019E95B1FA2AD66001B361F /* SplashViewController.swift */,
 			);
 			path = RobotEmigdio;
 			sourceTree = "<group>";
@@ -262,9 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7019E95E1FA2C38A001B361F /* HomeViewController.swift in Sources */,
 				7019E9331FA27DDC001B361F /* RobotEmigdio.xcdatamodeld in Sources */,
 				7019E92D1FA27DDC001B361F /* ViewController.swift in Sources */,
 				7019E92B1FA27DDC001B361F /* AppDelegate.swift in Sources */,
+				7019E95C1FA2AD66001B361F /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,11 +441,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B954E22L45;
 				INFOPLIST_FILE = RobotEmigdio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emigdio.RobotEmigdio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -448,11 +457,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B954E22L45;
 				INFOPLIST_FILE = RobotEmigdio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emigdio.RobotEmigdio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
